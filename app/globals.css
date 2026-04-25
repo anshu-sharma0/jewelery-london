@@ -62,7 +62,6 @@ textarea {
     radial-gradient(circle at 94% 16%, rgba(247, 240, 191, 0.5), transparent 12%),
     radial-gradient(circle at 88% 70%, rgba(247, 240, 191, 0.45), transparent 11%),
     linear-gradient(180deg, rgba(255, 253, 250, 0.98), rgba(255, 253, 250, 0.98));
-  border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: var(--shadow);
 }
 

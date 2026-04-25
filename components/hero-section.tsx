@@ -1,4 +1,4 @@
-import { Copy, FramedImage, SectionHeading, TextArrowLink } from "@/components/ui";
+import { Copy, FramedImage, PillArrowButton, SectionHeading, TextArrowLink } from "@/components/ui";
 
 const avatarImages = [
   "/assets/images/avatar-1.webp",
@@ -8,17 +8,28 @@ const avatarImages = [
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden px-6 pb-14 pt-10 sm:px-10 lg:px-16 lg:pb-20 lg:pt-14">
+    <section className="relative overflow-hidden px-6 pb-14 pt-8 sm:px-10 lg:px-16 lg:pb-20 lg:pt-12">
       <div className="pointer-events-none absolute inset-x-[8%] top-0 h-px bg-gradient-to-r from-transparent via-[#cdbd8f] to-transparent" />
       <div className="grid gap-10 lg:grid-cols-[1.05fr_1.1fr_0.95fr] lg:items-start">
-        <div className="space-y-8 lg:pt-16">
-          <SectionHeading title={"Modern Heirlooms\nfor Everyday Elegance"} className="max-w-[420px] whitespace-pre-line" />
-          <FramedImage
-            src="/assets/images/hero-hand.webp"
-            alt="Hand wearing a square ring"
-            className="rounded-arch-right image-shadow mx-auto aspect-[0.72] w-[210px] sm:mx-0 sm:w-[255px]"
-            priority
+        <div className="space-y-8 lg:pt-10">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-[#6b6758]">Private Jewellery House</p>
+          <SectionHeading
+            title={"Modern Heirlooms\nfor Everyday Elegance"}
+            className="max-w-[520px] whitespace-pre-line text-[54px] leading-[0.92] sm:text-[72px]"
           />
+          <Copy className="max-w-[520px] text-[17px] leading-9 text-[#2c2a25]">
+            Discover luminous rings, sculptural chains, and refined everyday statements crafted with editorial balance,
+            precious materials, and timeless character.
+          </Copy>
+          <div className="flex flex-wrap items-center gap-5">
+            <PillArrowButton href="/contact" label="Book Private Consultation" invert />
+            <TextArrowLink href="/collection" label="Browse Signature Pieces" />
+          </div>
+          <div className="grid max-w-[560px] gap-4 sm:grid-cols-3">
+            <Metric label="Consultations" value="1.5K+" />
+            <Metric label="Signature Pieces" value="2.0K+" />
+            <Metric label="Avg Rating" value="4.9/5" />
+          </div>
         </div>
 
         <div className="flex flex-col items-center">
@@ -42,7 +53,7 @@ export function HeroSection() {
                 </defs>
                 <text className="fill-[#1a1a1a] text-[8px] font-semibold uppercase tracking-[3px]">
                   <textPath href="#circlePath" startOffset="0%">
-                    Watch Brand Film - Watch Brand Film -
+                    Explore New Collection - Explore New Collection -
                   </textPath>
                 </text>
               </svg>
@@ -88,6 +99,15 @@ export function HeroSection() {
         <Stat value="2.0K+" label="Signature Pieces" />
       </div>
     </section>
+  );
+}
+
+function Metric({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="soft-card rounded-[22px] px-4 py-4">
+      <p className="display text-[28px] leading-none text-[#151515]">{value}</p>
+      <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#6c695f]">{label}</p>
+    </div>
   );
 }
 

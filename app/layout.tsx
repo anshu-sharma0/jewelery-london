@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Bodoni_Moda, Manrope } from "next/font/google";
+import { Navbar } from "@/components/navbar";
 import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
 import { business } from "@/data/site";
 import "./globals.css";
 
@@ -33,11 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${display.variable} ${body.variable}`}>
-        <div className="mx-auto min-h-screen max-w-[1540px] lg:px-5 lg:py-6">
-          <div className="page-shell overflow-hidden lg:rounded-[36px]">
-            <SiteHeader />
-            {children}
-            <SiteFooter />
+        <div className="mx-auto min-h-screen">
+          <div className="page-shell">
+            <Navbar />
+            <div className="overflow-hidden lg:rounded-b-[36px]">
+              {children}
+              <SiteFooter />
+            </div>
           </div>
         </div>
       </body>
