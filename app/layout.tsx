@@ -33,8 +33,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${display.variable} ${body.variable}`}>
-        <div className="mx-auto min-h-screen ">
-          <div className="page-shell overflow-hidden ">
+        <div className="mx-auto min-h-screen max-w-[1540px] lg:px-5 lg:py-6">
+          <div className="page-shell overflow-hidden lg:rounded-[36px]">
             <SiteHeader />
             {children}
             <SiteFooter />

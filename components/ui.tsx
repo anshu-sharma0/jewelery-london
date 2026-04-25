@@ -10,7 +10,7 @@ type SectionHeadingProps = {
 export function SectionHeading({ title, className = "" }: SectionHeadingProps) {
   return (
     <h2
-      className={`display text-[46px] leading-[0.94] tracking-[0] text-[#141414] sm:text-[58px] lg:text-[76px] ${className}`}
+      className={`display text-[46px] leading-[0.92] tracking-[-0.01em] text-[#141414] sm:text-[58px] lg:text-[76px] ${className}`}
     >
       {title}
     </h2>
@@ -24,7 +24,7 @@ type CopyProps = {
 
 export function Copy({ children, className = "" }: CopyProps) {
   return (
-    <p className={`text-[15px] leading-8 text-[#4f4f4f] sm:text-[16px] ${className}`}>{children}</p>
+    <p className={`text-[15px] leading-8 text-[#484848] sm:text-[16px] sm:leading-8 ${className}`}>{children}</p>
   );
 }
 
@@ -44,7 +44,7 @@ export function PillArrowButton({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center gap-4 text-[15px] font-semibold tracking-[0] transition-transform duration-300 hover:translate-x-1 ${className}`}
+      className={`group inline-flex items-center gap-4 text-[15px] font-semibold tracking-[0.01em] transition-transform duration-300 hover:translate-x-1 ${className}`}
     >
       <span className={`button-line inline-block h-10 w-[100px] shrink-0 sm:w-[122px]`} />
       <span
@@ -74,7 +74,7 @@ export function TextArrowLink({ href, label, className = "" }: TextArrowLinkProp
       href={href}
       className={`group inline-flex items-center gap-5 text-[17px] font-medium text-[#191919] transition-transform duration-300 hover:translate-x-1 ${className}`}
     >
-      <span>{label}</span>
+      <span className="tracking-[0.01em]">{label}</span>
       <span className="relative inline-flex h-4 w-28 items-center">
         <span className="h-px w-full bg-[#1a1a1a] transition-all duration-300 group-hover:w-[90%]" />
         <span className="absolute right-0 top-1/2 -translate-y-1/2 text-xl leading-none">
@@ -116,12 +116,12 @@ export function FramedImage({
 
 export function LogoMark() {
   return (
-    <div className="flex items-center gap-3">
-      <span className="relative block size-8 rounded-full border-[3px] border-[#111]">
-        <span className="absolute right-[-2px] top-[2px] size-3 rounded-full bg-white" />
+    <div className="flex items-center gap-3.5">
+      <span className="relative block size-8 rounded-full border-[2.5px] border-[#111]">
+        <span className="absolute right-[-2px] top-[2px] size-3 rounded-full bg-[#fffdfa]" />
         <span className="absolute left-[9px] top-[-6px] size-2 rounded-full bg-[#111]" />
       </span>
-      <span className="text-[28px] font-extrabold uppercase tracking-tight text-[#111]">{business.name}</span>
+      <span className="display text-[30px] font-semibold tracking-[0.03em] text-[#111]">{business.name}</span>
     </div>
   );
 }

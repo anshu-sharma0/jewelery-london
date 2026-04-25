@@ -8,10 +8,11 @@ const avatarImages = [
 
 export function HeroSection() {
   return (
-    <section className="px-6 pb-14 pt-10 sm:px-10 lg:px-16 lg:pb-20 lg:pt-14">
+    <section className="relative overflow-hidden px-6 pb-14 pt-10 sm:px-10 lg:px-16 lg:pb-20 lg:pt-14">
+      <div className="pointer-events-none absolute inset-x-[8%] top-0 h-px bg-gradient-to-r from-transparent via-[#cdbd8f] to-transparent" />
       <div className="grid gap-10 lg:grid-cols-[1.05fr_1.1fr_0.95fr] lg:items-start">
         <div className="space-y-8 lg:pt-16">
-          <SectionHeading title={"Quiet Luxury\nfor Everyday"} className="max-w-[380px] whitespace-pre-line" />
+          <SectionHeading title={"Modern Heirlooms\nfor Everyday Elegance"} className="max-w-[420px] whitespace-pre-line" />
           <FramedImage
             src="/assets/images/hero-hand.webp"
             alt="Hand wearing a square ring"
@@ -41,13 +42,13 @@ export function HeroSection() {
                 </defs>
                 <text className="fill-[#1a1a1a] text-[8px] font-semibold uppercase tracking-[3px]">
                   <textPath href="#circlePath" startOffset="0%">
-                    Watch Our History - Watch Our History -
+                    Watch Brand Film - Watch Brand Film -
                   </textPath>
                 </text>
               </svg>
             </div>
           </div>
-          <TextArrowLink href="/collection" label="Explore Collection" className="mt-10 self-start sm:ml-6" />
+          <TextArrowLink href="/collection" label="Explore Signature Collection" className="mt-10 self-start sm:ml-6" />
         </div>
 
         <div className="space-y-8 lg:pt-4">
@@ -58,7 +59,7 @@ export function HeroSection() {
             priority
           />
           <SectionHeading
-            title={"Timeless\nJewelry\nCollections"}
+            title={"Fine Jewellery\nCurated for\nModern Icons"}
             className="max-w-[330px] whitespace-pre-line text-center text-[52px] leading-[0.95] sm:text-left sm:text-[68px] lg:ml-2"
           />
         </div>
@@ -78,13 +79,13 @@ export function HeroSection() {
             ))}
           </div>
           <Copy className="max-w-[470px] text-[18px] leading-9 text-[#272727]">
-            Discover sculptural rings, luminous necklaces, and signature pieces created to feel intimate, elevated, and
-            enduring.
+            Discover sculptural rings, luminous necklaces, and investment-worthy essentials designed with refined
+            silhouettes, precious materials, and effortless sophistication.
           </Copy>
         </div>
 
-        <Stat value="1.5K+" label="Private Clients" />
-        <Stat value="2.0K+" label="Curated Pieces" />
+        <Stat value="1.5K+" label="Private Consultations" />
+        <Stat value="2.0K+" label="Signature Pieces" />
       </div>
     </section>
   );

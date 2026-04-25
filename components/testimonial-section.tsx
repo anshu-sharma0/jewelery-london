@@ -4,7 +4,7 @@ export function TestimonialSection() {
   return (
     <section id="testimonial" className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
       <div className="mx-auto max-w-[760px] text-center">
-        <SectionHeading title={"Some Best Word From\nOur Clients"} className="whitespace-pre-line text-[50px] sm:text-[62px]" />
+        <SectionHeading title={"Words from Our\nPrivate Clients"} className="whitespace-pre-line text-[50px] sm:text-[62px]" />
       </div>
 
       <div className="mt-14 grid gap-12 lg:grid-cols-[0.88fr_1.22fr] lg:items-center">
@@ -21,10 +21,9 @@ export function TestimonialSection() {
         <div className="max-w-[720px]">
           <div className="display text-[112px] leading-[0.75] text-[#151515]">“</div>
           <Copy className="mt-4 text-[18px] leading-10 text-[#2f2f2f]">
-            The quality and craftsmanship are exceptional, and the piece is even more beautiful than I imagined. From
-            start to finish, the experience was seamless, the team was incredibly helpful and ensured I found exactly
-            what I was looking for. I&apos;ve received so many compliments, and I can&apos;t wait to add more pieces to my
-            collection.
+            The craftsmanship is exceptional, and the final piece felt even more beautiful in person. From consultation
+            to delivery, every detail was thoughtful and seamless. I have received endless compliments, and I already
+            know this will not be my last Aurelia House piece.
           </Copy>
 
           <div className="mt-10 flex flex-wrap items-center gap-6">

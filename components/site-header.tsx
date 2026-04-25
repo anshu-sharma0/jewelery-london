@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { BagIcon, LogoMark, SearchIcon } from "@/components/ui";
-import { navigation } from "@/data/site";
+import { BagIcon, LogoMark } from "@/components/ui";
+import { business, navigation } from "@/data/site";
 
 export function SiteHeader() {
   return (
     <header className="px-6 pt-8 sm:px-10 lg:px-16 lg:pt-10">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex items-center justify-between gap-6">
-          <Link href="/" aria-label="UiXShuvo home">
+          <Link href="/" aria-label={`${business.name} home`}>
             <LogoMark />
           </Link>
           <div className="hidden h-10 w-px bg-[var(--line)] lg:block" />

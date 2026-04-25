@@ -1,13 +1,13 @@
 import { FramedImage, SectionHeading, TextArrowLink } from "@/components/ui";
 
-const categories = ["Necklaces", "Bracelets", "Rings", "Necklaces", "Earrings"];
+const categories = ["Necklaces", "Bracelets", "Rings", "Earrings", "Bridal"];
 
 export function CollectionSection() {
   return (
     <section id="collection" className="px-6 py-12 sm:px-10 lg:px-16 lg:py-20">
       <div className="grid gap-12 lg:grid-cols-[0.95fr_1.15fr] lg:items-center">
         <div className="max-w-[460px]">
-          <SectionHeading title="Our Collection" className="text-[48px] sm:text-[62px]" />
+          <SectionHeading title="The Signature Collection" className="text-[48px] sm:text-[62px]" />
           <div className="mt-9 grid gap-8 sm:grid-cols-[1fr_auto] sm:items-start">
             <ul className="space-y-6">
               {categories.map((category, index) => (
@@ -45,7 +45,7 @@ export function CollectionSection() {
               </button>
             </div>
           </div>
-          <TextArrowLink href="/collection" label="All Collection" className="mt-10" />
+          <TextArrowLink href="/collection" label="View Full Collection" className="mt-10" />
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2">

@@ -19,18 +19,18 @@ export function StorySection() {
 
         <div className="max-w-[640px]">
           <SectionHeading
-            title={"Jewelry that balances\nmodern taste and timeless grace"}
+            title={"Jewellery that balances\nmodern expression and timeless grace"}
             className="max-w-[620px] whitespace-pre-line text-[48px] leading-[0.95] sm:text-[64px]"
           />
           <Copy className="mt-8">
-            We shape every piece with a calm editorial sensibility, using elegant curves, polished finishes, and details
-            that feel as considered as couture.
+            Every design is built with an editorial sensibility, where sculpted curves, meticulous setting work, and
+            polished finishes create a quietly powerful impression.
           </Copy>
           <Copy className="mt-6">
-            The result is a collection that wears beautifully every day while still carrying the emotional weight of a
-            future heirloom.
+            The result is jewellery that feels effortless for daily wear yet meaningful enough to become a future
+            heirloom.
           </Copy>
-          <TextArrowLink href="/collection" label="Explore Collection" className="mt-10" />
+          <TextArrowLink href="/collection" label="Discover The Collection" className="mt-10" />
         </div>
       </div>
     </section>
