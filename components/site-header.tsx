@@ -28,24 +28,10 @@ export function SiteHeader() {
         <div className="flex items-center justify-between gap-4 self-end lg:self-auto">
           <button
             type="button"
-            aria-label="Search"
-            className="flex size-11 items-center justify-center rounded-full border border-transparent transition-colors duration-300 hover:border-[var(--line)]"
-          >
-            <SearchIcon />
-          </button>
-          <div className="h-10 w-px bg-[var(--line)]" />
-          <Link href="/contact" className="text-[15px] font-medium text-[#181818] transition-opacity duration-300 hover:opacity-60">
-            Contact
-          </Link>
-          <button
-            type="button"
             aria-label="Cart"
-            className="relative flex size-12 items-center justify-center rounded-full bg-[#171717] text-white transition-transform duration-300 hover:scale-105"
+            className="relative flex size-12 items-center justify-center rounded-full transition-transform duration-300 hover:scale-105"
           >
             <BagIcon />
-            <span className="absolute right-1.5 top-1.5 flex size-4 items-center justify-center rounded-full bg-white text-[10px] font-bold text-[#171717]">
-              3
-            </span>
           </button>
         </div>
       </div>

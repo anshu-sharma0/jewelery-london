@@ -7,9 +7,6 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-5 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-3">
-            <span className="flex size-11 items-center justify-center rounded-full border border-[var(--border-strong)] bg-white/6 text-sm font-semibold tracking-[0.3em] text-[var(--text)]">
-              AH
-            </span>
             <span className="flex flex-col">
               <span className="font-[family:var(--font-display)] text-lg tracking-[0.18em] text-[var(--text)] uppercase">
                 {business.name}
